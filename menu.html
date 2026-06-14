@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Foodie's Paradise - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="menu-page">
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+</header>
+
+<div class="container">
+
+```
+<h1>Our Menu</h1>
+<p>Explore our delicious dishes and refreshing beverages.</p>
+
+<table border="1" width="100%" cellpadding="10" cellspacing="0">
+    
+    <tr>
+        <th>Item</th>
+        <th>Category</th>
+        <th>Price (₹)</th>
+    </tr>
+
+    <tr>
+        <td>Margherita Pizza</td>
+        <td>Main Course</td>
+        <td>249</td>
+    </tr>
+
+    <tr>
+        <td>Classic Burger</td>
+        <td>Main Course</td>
+        <td>199</td>
+    </tr>
+
+    <tr>
+        <td>Creamy Pasta</td>
+        <td>Main Course</td>
+        <td>229</td>
+    </tr>
+
+    <tr>
+        <td>Hakka Chowmein</td>
+        <td>Chinese</td>
+        <td>179</td>
+    </tr>
+
+    <tr>
+        <td>Chilli Chicken</td>
+        <td>Chinese</td>
+        <td>259</td>
+    </tr>
+
+    <tr>
+        <td>Drums of Heaven</td>
+        <td>Chinese</td>
+        <td>299</td>
+    </tr>
+
+    <tr>
+        <td>Veg Momos</td>
+        <td>Starter</td>
+        <td>149</td>
+    </tr>
+
+    <tr>
+        <td>Chicken Momos</td>
+        <td>Starter</td>
+        <td>179</td>
+    </tr>
+
+    <tr>
+        <td>Fried Rice</td>
+        <td>Chinese</td>
+        <td>189</td>
+    </tr>
+
+    <tr>
+        <td>Club Sandwich</td>
+        <td>Snack</td>
+        <td>169</td>
+    </tr>
+
+    <tr>
+        <td>Chocolate Brownie</td>
+        <td>Dessert</td>
+        <td>129</td>
+    </tr>
+
+    <tr>
+        <td>Ice Cream Sundae</td>
+        <td>Dessert</td>
+        <td>149</td>
+    </tr>
+
+    <tr>
+        <td>Special Dessert Platter</td>
+        <td>Dessert</td>
+        <td>199</td>
+    </tr>
+
+    <tr>
+        <td>Virgin Mojito</td>
+        <td>Beverage</td>
+        <td>119</td>
+    </tr>
+
+    <tr>
+        <td>Blue Lagoon</td>
+        <td>Beverage</td>
+        <td>129</td>
+    </tr>
+
+    <tr>
+        <td>Cold coffee</td>
+        <td>Beverage</td>
+        <td>139</td>
+    </tr>
+
+    <tr>
+        <td>Mango Lassi</td>
+        <td>Beverage</td>
+        <td>99</td>
+    </tr>
+
+    <tr>
+        <td>Lemon Chicken</td>
+        <td>Main Course</td>
+        <td>299</td>
+    </tr>
+
+    <tr>
+        <td>Cold Coffee</td>
+        <td>Beverage</td>
+        <td>149</td>
+    </tr>
+
+    <tr>
+        <td>Cappuccino</td>
+        <td>Beverage</td>
+        <td>139</td>
+    </tr>
+
+</table>
+```
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Foodie's Paradise Restaurant. All Rights Reserved.</p>
+</footer>
+
+<script>
+if(localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
+<script>
+function logout() {
+    localStorage.removeItem("loggedIn");
+    localStorage.removeItem("username");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>>
+</html>

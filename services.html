@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+    <a href="#" onclick="logout()">Logout</a>
+</nav>
+</header>
+
+<div class="container">
+
+<h2>Our Services</h2>
+
+<div class="card-container">
+
+<div class="card">
+<img src="images/dining.jpg">
+<h3>Fine Dining</h3>
+<p>Elegant dining experience with premium dishes.</p>
+</div>
+
+<div class="card">
+<img src="images/delivery.jpg">
+<h3>Home Delivery</h3>
+<p>Fast and reliable delivery service at your doorstep.</p>
+</div>
+
+<div class="card">
+<img src="images/catering.jpg">
+<h3>Catering</h3>
+<p>Professional catering for weddings and events.</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Foodie's Paradise Restaurant</p>
+</footer>
+
+<script>
+if(localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
+<script>
+function logout() {
+    localStorage.removeItem("loggedIn");
+    localStorage.removeItem("username");
+    window.location.href = "index.html";
+}
+</script>
+</body>
+</html>

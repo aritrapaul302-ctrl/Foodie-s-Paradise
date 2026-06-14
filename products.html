@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+    <a href="#" onclick="logout()">Logout</a>
+</nav>
+</header>
+
+<div class="container">
+
+<h2>Our Delicious Menu</h2>
+
+<p>
+    Explore our wide range of mouth-watering dishes including pizzas,
+    burgers, pasta, brownies, desserts, ice cream sundaes, chowmein,
+    chilli chicken, drums of heaven, momos, fried rice, sandwiches,
+    virgin mojitos, and many more customer favorites.
+</p>
+
+<div class="card-container">
+
+<div class="card">
+<img src="images/pizza.jpg">
+<h3>Italian Pizza</h3>
+<p>Crispy crust with fresh toppings.</p>
+</div>
+
+<div class="card">
+<img src="images/burger.jpg">
+<h3>Classic Burger</h3>
+<p>Juicy burger served with fries.</p>
+</div>
+
+<div class="card">
+<img src="images/pasta.jpg">
+<h3>Creamy Pasta</h3>
+<p>Rich and delicious pasta made by our chefs.</p>
+</div>
+
+<div class="card">
+    <img src="images/brownie.jpg" alt="Brownie">
+    <h3>Chocolate Brownie</h3>
+    <p>Rich and fudgy brownie topped with chocolate sauce.</p>
+</div>
+
+<div class="card">
+    <img src="images/desserts.jpg" alt="Desserts">
+    <h3>Desserts</h3>
+    <p>A delightful collection of sweet treats and pastries.</p>
+</div>
+
+<div class="card">
+    <img src="images/icecream.jpg" alt="Ice Cream">
+    <h3>Ice Cream Sundae</h3>
+    <p>Creamy ice cream served with delicious toppings.</p>
+</div>
+
+<div class="card">
+    <img src="images/chowmein.jpg" alt="Chowmein">
+    <h3>Hakka Chowmein</h3>
+    <p>Flavorful noodles stir-fried with vegetables and sauces.</p>
+</div>
+
+<div class="card">
+    <img src="images/chillichicken.jpg" alt="Chilli Chicken">
+    <h3>Chilli Chicken</h3>
+    <p>Spicy chicken cooked with peppers and special sauces.</p>
+</div>
+
+<div class="card">
+    <img src="images/drumsofheaven.jpg" alt="Drums of Heaven">
+    <h3>Drums of Heaven</h3>
+    <p>Crispy chicken drumsticks coated in our signature sauce.</p>
+</div>
+
+<div class="card">
+    <img src="images/momo.jpg" alt="Momos">
+    <h3>Momos</h3>
+    <p>Steamed dumplings served with spicy chutney.</p>
+</div>
+
+<div class="card">
+    <img src="images/friedrice.jpg" alt="Fried Rice">
+    <h3>Fried Rice</h3>
+    <p>Perfectly cooked rice tossed with vegetables and spices.</p>
+</div>
+
+<div class="card">
+    <img src="images/sandwich.jpg" alt="Sandwich">
+    <h3>Club Sandwich</h3>
+    <p>Fresh sandwich loaded with vegetables and tasty fillings.</p>
+</div>
+
+<div class="card">
+    <img src="images/virginmojito.jpg" alt="Virgin Mojito">
+    <h3>Virgin Mojito</h3>
+    <p>A refreshing blend of mint, lime, soda, and ice.</p>
+</div>
+
+<div class="card">
+    <img src="images/bluelagoon.jpg" alt="Blue Lagoon">
+    <h3>Blue Lagoon</h3>
+    <p>A refreshing mocktail made with blue curaçao syrup, lemon, soda, and ice, perfect for a cool and relaxing experience.</p>
+</div>
+
+<div class="card">
+    <img src="images/coldcoffee.jpg" alt="Cold Coffee">
+    <h3>Cold Coffee</h3>
+    <p>A chilled and creamy coffee blended with milk, ice, and chocolate syrup.</p>
+</div>
+
+<div class="card">
+    <img src="images/cappuccino.jpg" alt="Cappuccino">
+    <h3>Cappuccino</h3>
+    <p>Freshly brewed coffee topped with rich milk foam and a sprinkle of cocoa.</p>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Foodie's Paradise Restaurant</p>
+</footer>
+
+<script>
+if(localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+<script>
+function logout() {
+    localStorage.removeItem("loggedIn");
+    localStorage.removeItem("username");
+    window.location.href = "index.html";
+}
+</script>
+</body>
+</html>

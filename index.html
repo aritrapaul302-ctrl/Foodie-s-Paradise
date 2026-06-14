@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie's Paradise Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="menu.html">Menu</a>
+            <a href="login.html" class="nav-btn">Login</a>
+            <a href="#" class="nav-btn" onclick="logout()">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <div>
+            <h1>Welcome to Foodie's Paradise</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <h2>Experience the Taste of Excellence</h2>
+
+        <p>
+            Welcome to <strong>Foodie's Paradise</strong>, one of the finest dining
+            destinations in the city. We are passionate about serving delicious,
+            high-quality food prepared with fresh ingredients and authentic recipes.
+            Our restaurant combines a warm atmosphere with exceptional service to
+            create an unforgettable dining experience.
+        </p>
+
+        <p>
+            Whether you're enjoying a family dinner, celebrating a special occasion,
+            or simply craving your favorite dish, Foodie's Paradise offers something
+            for everyone. Our menu features a wide range of cuisines, including
+            Italian, Indian, Chinese, and Continental specialties.
+        </p>
+
+        <a href="products.html" class="btn">Explore Our Menu</a>
+
+        <br><br>
+
+        <h2>Why Choose Us?</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="images/chef.jpg" alt="Expert Chef">
+                <h3>Expert Chefs</h3>
+                <p>
+                    Our experienced chefs prepare every dish with creativity,
+                    passion, and attention to detail.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="images/dining.jpg" alt="Fine Dining">
+                <h3>Comfortable Ambience</h3>
+                <p>
+                    Enjoy a relaxing and elegant dining environment perfect for
+                    families, friends, and special celebrations.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="images/delivery.jpg" alt="Food Delivery">
+                <h3>Fast Delivery</h3>
+                <p>
+                    Get your favorite meals delivered quickly and safely right
+                    to your doorstep.
+                </p>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <h2>Our Specialties</h2>
+
+        <p>
+            We are famous for our wood-fired pizzas, gourmet burgers, creamy
+            pasta dishes, delicious desserts, and refreshing beverages.
+            Every meal is prepared using fresh ingredients to ensure the
+            highest quality and taste.
+        </p>
+
+        <a href="services.html" class="btn">View Our Services</a>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Foodie's Paradise Restaurant. All Rights Reserved.</p>
+        <p>
+            Follow us on
+            <a href="https://www.instagram.com" target="_blank" style="color:gold;">
+                Instagram
+            </a>
+            |
+            <a href="https://www.facebook.com" target="_blank" style="color:gold;">
+                Facebook
+            </a>
+        </p>
+    </footer>
+
+    
+
+    <script>
+        function logout() {
+            localStorage.removeItem("loggedIn");
+            localStorage.removeItem("username");
+            window.location.href = "index.html";
+    }
+    </script>
+
+</body>
+</html>
