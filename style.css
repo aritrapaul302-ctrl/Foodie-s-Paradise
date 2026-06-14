@@ -33,7 +33,7 @@ nav a:hover{
 }
 
 .hero{
-    background:url("images/hero.jpg");
+    background:url("hero.jpg");
     height:500px;
     background-size:cover;
     background-position:center;
@@ -114,7 +114,7 @@ footer{
 }
 
 .hero{
-    background-image: url('images/hero.jpg');
+    background-image: url('hero.jpg');
     height: 800px;
     background-size: cover;
     background-position: center;
