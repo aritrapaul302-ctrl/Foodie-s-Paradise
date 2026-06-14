@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+}
+
+header{
+    background:#8B0000;
+    color:white;
+    padding:15px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+.hero{
+    background:url("images/hero.jpg");
+    height:500px;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    background:rgba(0,0,0,0.5);
+    padding:20px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:40px 0;
+}
+
+h2{
+    color:#8B0000;
+    margin-bottom:15px;
+}
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    flex:1;
+    min-width:250px;
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:contain;
+    border-radius:10px;
+    background:white;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:#8B0000;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    margin-top:10px;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#a80000;
+}
+
+.contact-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.hero{
+    background-image: url('images/hero.jpg');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.menu-page table{
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.menu-page th{
+    background-color: #8B0000;
+    color: white;
+}
+
+.menu-page td,
+.menu-page th{
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.menu-page tr:nth-child(even){
+    background-color: #fff5cc;
+}
